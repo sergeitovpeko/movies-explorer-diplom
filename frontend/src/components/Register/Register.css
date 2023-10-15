@@ -1,0 +1,12 @@
+.register {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 396px;
+  height: 100%;
+}
+
+@media all and (max-width: 472px) {
+  .register {
+    max-width: 260px;
+  }
+}

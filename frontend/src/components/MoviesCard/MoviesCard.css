@@ -1,0 +1,229 @@
+/*.movies-card {
+  margin: 0;
+  padding: 0;
+  min-width: 270px;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: auto 1fr min-content;
+  justify-content: left;
+  cursor: pointer;
+}
+
+.movies-card__image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
+  grid-column: span 2;
+}
+
+.movies-card__title {
+  margin: 14px 0 13px;
+  padding: 0;
+  max-width: 226px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 121%;
+}
+
+.movies-card__like-button {
+  margin: 10px 0 0;
+  padding: 0;
+  background: url(../../images/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+
+.movies-card__like-button:hover {
+  opacity: 0.5;
+}
+
+.movies-card__like-button_active {
+  background: url(../../images/like-active.svg);
+}
+
+.movies-card__delete-button {
+  margin: 10px 0 0 20px;
+  opacity: 0;
+  background: url(../../images/delete-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+
+.movies-card:hover .movies-card__delete-button {
+  display: inline-block;
+  opacity: 1;
+}
+
+.movies-card__duration {
+  margin: 0;
+  padding: 22px 0 0;
+  border-top: 1px solid #e8e8e8;
+  grid-column: span 2;
+  font-size: 11px;
+  line-height: 121%;
+  color: #a0a0a0;
+}
+
+@media all and (max-width: 954px) {
+  .movies-card__title {
+    max-width: 295px;
+    margin-bottom: 28px;
+    padding: 8px 0 0;
+  }
+  .movies-card__title {
+    margin: 4px 0 13px;
+  }
+ 
+}
+
+@media all and (max-width: 765px) {
+  
+  .movies-card__title {
+    max-width: 240px;
+    font-size: 12px;
+    line-height: 125%;
+  }
+  .movies-card__duration {
+    font-size: 10px;
+  }
+}*/
+
+.card {
+  background: #fff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  max-width: 339px;
+  flex-shrink: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.card__image {
+  object-fit: cover;
+  background-size: cover;
+  /*width: 270px;*/
+  width: 100%;
+  height: 203px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 0;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.card__image:hover {
+  filter: brightness(30%);
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 15px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: 0;
+}
+
+.card__title {
+  max-width: 250px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: black;
+}
+
+.card__time {
+  display: flex;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #8b8b8b;
+  align-items: center;
+}
+
+.card__delete-button {
+  background-image: url("../../images/delete-button.svg");
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__like-button {
+  margin-right: 6px;
+  background-image: url("../../images/like.svg");
+  width: 21px;
+  height: 22px;
+  /*flex-shrink: 0;*/
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__like-button_active {
+  background-image: url("../../images/like-active.svg");
+}
+
+.card__delete-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1279px) {
+  .card {
+    max-width: 273px;
+    max-height: 262px;
+  }
+
+  .card__wrapper {
+    padding: 11px 15px;
+  }
+
+  .card__image {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 300px;
+    max-height: 235px;
+    flex-shrink: 0;
+  }
+
+  .card__image {
+    height: 168px;
+  }
+
+  .card__title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .card__time {
+    margin-top: 13px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
