@@ -1,0 +1,27 @@
+.page {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: black;
+}
+
+.page__wrapper {
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inactive-button {
+  pointer-events: none;
+}

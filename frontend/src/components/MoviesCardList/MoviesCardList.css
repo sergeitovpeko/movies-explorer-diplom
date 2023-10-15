@@ -1,0 +1,139 @@
+/*.movies-cardlist {
+  margin: 0 auto;
+  padding: 70px 0 10px;
+}
+
+.movies-cardlist__movies-grid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); */
+ /* grid-template-columns: repeat(4, minmax(270px, 1fr));
+  grid-auto-rows: 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  list-style: none;
+}
+
+.movies__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 51px;
+  margin-bottom: 80px;
+
+}
+
+@media all and (max-width: 1175px) {
+  .movies-cardlist__movies-grid {
+    padding: 0 0 28px;
+    grid-template-columns: repeat(2, minmax(270px, 1fr));
+    column-gap: 30px;
+    row-gap: 33px;
+  }
+  .movies-cardlist {
+    padding: 68px 30px 31px;
+  }
+  .movies-cardlist__block {
+    padding: 10px 0 10px;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .movies-cardlist {
+    padding: 39px 10px 31px;
+  }
+  .movies-cardlist__movies-grid {
+    grid-template-columns: repeat(1, minmax(270px, 1fr));
+    column-gap: 36px;
+    row-gap: 37px;
+    padding: 0 0 61px;
+  }
+}*/
+
+.cards {
+  height: 100%;
+   flex: 1 1 auto;
+   display: flex;
+   flex-direction: column;
+   border: 0;
+   outline: none;
+  
+ }
+ 
+ .cards__list {
+  height: 100%;
+   margin: 78px 0px 10px;
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 37px 28px;
+   border: 0;
+ }
+ 
+ 
+ .cards__button-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 51px;
+   margin-bottom: 80px;
+ }
+ 
+ .cards__button {
+   box-sizing: border-box;
+   width: 320px;
+   height: 36px;
+   background-color: transparent;
+   border: none;
+   background: #F9F9F9;
+   border-radius: 6px;
+   color: black;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+ }
+ 
+ .cards__button:hover {
+   border: 1px solid #2be080;
+   opacity: .6;
+ }
+ 
+ @media screen and (max-width: 1279px) {
+   .cards__list {
+     padding: 0;
+     margin: 81px auto -37px;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 30px 30px;
+    
+   }
+ 
+   .cards__button-wrapper {
+     margin-top: 117px;
+     margin-bottom: 81px;
+   }
+ }
+ 
+ @media screen and (max-width: 767px) {
+   .card {
+     height: 237px;
+   }
+ 
+   .cards__list {
+     margin: 50px auto 10px;
+     grid-template-columns: repeat(1, 1fr);
+     gap: 18px;
+   }
+ 
+   .cards__button {
+     width: 240px;
+   }
+ 
+   .cards__button-wrapper {
+     margin: 70px 0 80px;
+   }
+ }

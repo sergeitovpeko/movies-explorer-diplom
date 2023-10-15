@@ -1,0 +1,33 @@
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+.main__heading {
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 23px;
+  font-size: 22px;
+  line-height: 121%;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  border-bottom: 1px solid black;
+}
+
+/* @media all and (max-width: 1190px) {
+  .main {
+    max-width: 90%;
+  }
+  
+} */
+
+
+@media all and (max-width: 400px) {
+  .main__heading {
+    padding-bottom: 28px;
+    font-size: 18px;
+  }
+}
